@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Amazon clone</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <header>
+    <div class="navbar-one">
+      <div class="nav-logo border">
+        <div class="logo"></div>
+      </div>
+
+      <div class="nav-address border">
+        <p class="del">Deliver to</p>
+        <div class="icon-country">
+          <i class="fa-solid fa-location-dot"></i>
+          <p>India</p>
+        </div>
+      </div>
+
+      <div class="nav-search border">
+        <select class="search-select">
+          <option value="All">All</option>
+        </select>
+
+        <input type="text" placeholder="Search Amazon" class="search-input">
+
+        <div class="search-icon">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+      </div>
+
+      <div class="nav-lang border">
+        <div class="us-flag"></div>
+        <select class="lang">
+          <option value="EN">EN</option>
+          <option value="Hindi">Hindi</option>
+        </select>
+      </div>
+
+      <div class="nav-signin border">
+        <p class="para">Hello, sign in</p>
+        <select class="acc-list">
+          <option value="Account & Lists">Account & Lists</option>
+        </select>
+      </div>
+
+      <div class="nav-return border">
+        <p class="para" id="returns">Returns</p>
+        <p class="acc-list" id="orders">& Orders</p>
+      </div>
+
+      <div class="nav-cart border">
+        <i class="fa-solid fa-cart-shopping"></i>
+      </div>
+    </div>
+
+    <div class="navbar-two">
+      <div class="menu border">
+        <i class="fa-solid fa-bars"></i>
+        <p>All</p>
+      </div>
+
+      <div class="options border">
+        <p class="border">Today's Deals </p>
+        <p class="border">Customer Service </p>
+        <p class="border">Registry </p>
+        <p class="border">Gift Cards </p>
+        <p class="border">Sell </p>
+      </div>
+
+      <div class="shop border">
+        <p>Shop deals in Electronics</p>
+      </div>
+    </div>
+  </header>
+
+
+  <main>
+    <div class="hero">
+      <div class="hero-image">
+        <div class="hero-text-box">
+          <p>You are on amazon.com. You can also shop on Amazon India for millions of products with fast local delivery.
+          </p>
+          <a href="https://www.amazon.com/"> amazon.in</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="shop-section">
+      <div class="box-item">
+        <p>Shop deal in fashion </p>
+        <div class="box-image">
+          <div class="box-image-space-content">
+            <div class="box-image-space-image">
+              <img class="smallImg" src="images folder/image item 2/dresses.jpg" alt="dresses.jpg">
+            </div>
+            <p>Dresses under $50</p>
+          </div>
+
+          <div class="box-image-space-content">
+            <div class="box-image-space-image">
+              <img class="smallImg" src="images folder\image item 2\jeans.jpg" alt="">
+            </div>
+            <p>Jeans under $50</p>
+          </div>
+
+          <div class="box-image-space-content">
+            <div class="box-image-space-image">
+              <img class="smallImg" src="images folder\image item 2\shoes.jpg" alt="">
+            </div>
+            <p>Shoes under $50</p>
+          </div>
+
+          <div class="box-image-space-content">
+            <div class="box-image-space-image">
+              <img class="smallImg" src="images folder\image item 2\tops.jpg" alt="">
+            </div>
+            <p>Tops under $50</p>
+          </div>
+        </div>
+        <a href="Shop now">See more</a>
+      </div>
+
+      <div class="box-item">
+        <p>For elevated space</p>
+        <div class="box-image">
+          <div class="box-image-space-content">
+            <div class="box-image-space-image">
+              <img class="smallImg" src="images folder\image item 3\baskets & hampers.jpg">
+            </div>
+            <p>Baskets & Hampers</p>
+          </div>
+
+          <div class="box-image-space-content">
+            <div class="box-image-space-image">
+              <img class="smallImg" src="images folder/image item 3/accent furniture.jpg">
+            </div>
+            <p>Accent furniture</p>
+          </div>
+
+          <div class="box-image-space-content">
+            <div class="box-image-space-image">
+              <img class="smallImg" src="/images folder/image item 3/hardware.jpg">
+            </div>
+            <p>Hardware</p>
+          </div>
+
+          <div class="box-image-space-content">
+            <div class="box-image-space-image">
+              <img class="smallImg" src="/images folder/image item 3/wallpaper & paint.jpg">
+            </div>
+            <p>Wallpapers & paint</p>
+          </div>
+        </div>
+        <a href="Shop now">See more</a>
+      </div>
+
+      <div class="box-item">
+        <p>Top Deal </p>
+        <div class="box-image crop flexDirColm">
+          <div class="topDeal">
+            <img class="bigImg topDealImg" src="/images folder/top deal.jpg" alt="">
+          </div>
+
+          <div class="redBoxPara">
+            <div class="redBox">
+              <p>36% off</p>
+            </div>
+            <p id="topDealPara">Top deal</p>
+          </div>
+
+          <div class="price">
+            <div class="dollar">
+              <p>$</p>
+            </div>
+
+            <div class="currentPriceTag">
+              <p>31.99</p>
+            </div>
+
+            <div class="list">
+              <p>List price:</p>
+            </div>
+
+            <div class="list priceTag">
+              <p>$49.99</p>
+            </div>
+          </div>
+
+          <div class="lastPara">
+            <p>Save on FORTEM seat cushion/lumber sup...</p>
+          </div>
+        </div>
+        <a href="Shop now">See all deals</a>
+      </div>
+
+      <div class="box-item">
+        <p>Gaming accessories</p>
+        <div class="box-image">
+          <div class="box-image-space-content">
+            <div class="box-image-space-image">
+              <img class="smallImg" src="/images folder/image item 4/chairs.jpg">
+            </div>
+            <p>Chairs</p>
+          </div>
+
+          <div class="box-image-space-content">
+            <div class="box-image-space-image">
+              <img id="headsets" class="smallImg" src="/images folder/image item 4/headsets.jpg">
+            </div>
+            <p>Headsets</p>
+          </div>
+
+          <div class="box-image-space-content">
+            <div class="box-image-space-image">
+              <img class="smallImg" src="/images folder/image item 4/computer mice.jpg">
+            </div>
+            <p>Computer mice</p>
+          </div>
+
+          <div class="box-image-space-content">
+            <div class="box-image-space-image">
+              <img id="keyboard" class="smallImg" src="/images folder/image item 4/keyboards.jpg">
+            </div>
+            <p>Keyboards</p>
+          </div>
+        </div>
+        <a href="Shop now">See more</a>
+      </div>
+
+      <div class="box-item">
+        <p>Refresh your space </p>
+        <div class="box-image">
+          <div class="box-image-space-content">
+            <div class="box-image-space-image">
+              <img class="smallImg" src="/images folder/image item 1/dining.jpg" alt="">
+            </div>
+            <p>Dining</p>
+          </div>
+
+          <div class="box-image-space-content">
+            <div class="box-image-space-image">
+              <img class="smallImg" src="/images folder/image item 1/home appliances.jpg" alt="">
+            </div>
+            <p>Home</p>
+          </div>
+
+          <div class="box-image-space-content">
+            <div class="box-image-space-image">
+              <img class="smallImg" src="/images folder/image item 1/food items.jpg" alt="">
+            </div>
+            <p>Kitchen</p>
+          </div>
+
+          <div class="box-image-space-content">
+            <div class="box-image-space-image">
+              <img class="smallImg" src="/images folder/image item 1/red bottle.jpg" alt="">
+            </div>
+            <p>Health & Beauty</p>
+          </div>
+        </div>
+        <a href="Shop now">See more</a>
+      </div>
+
+      <div class="box-item forAdvOuter">
+        <div class="box-image crop forAdv">
+          <img class="bigImg forAdvImg" src="/images folder/adv.jpg" alt="">
+        </div>
+
+        <div class="forTrans"></div>
+
+        <div class="forSignIn">
+          <div class="signInRequest">
+            <p>Sign in for the best experience</p>
+          </div>
+
+          <div class="signInButton">
+            <p>Sign in securely</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="box-item">
+        <p>Health & Personal Care </p>
+        <div lass="box-image crop">
+          <img class="bigImg" src="/images folder/health care.jpg" alt="">
+        </div>
+        <a href="Shop now">Shop now</a>
+      </div>
+
+      <div class="box-item">
+        <p>New arrivals in Toys </p>
+        <div class="box-image crop">
+          <img class="bigImg" src="/images folder/Toys.jpg" alt="/images folder /Toys.jpg">
+        </div>
+        <a href="Shop now">Shop now</a>
+      </div>
+
+      <div class="box-item">
+        <p>Discover fashion trends </p>
+        <div class="box-image crop">
+          <img class="bigImg" src="/images folder/fashion trends.jpg" alt="">
+        </div>
+        <a href="Shop now">Shop now</a>
+      </div>
+
+      <div class="box-item">
+        <p>Beauty picks </p>
+        <div style="background-image: url('/images folder/Beauty picks.jpg')" class="box-image"></div>
+        <a href="Shop now">Shop now</a>
+      </div>
+
+      <div class="box-item">
+        <p>Cloths </p>
+        <div class="box-image crop">
+          <img class="smallImg" src="/images folder/cloths.jpg" alt="">
+        </div>
+        <a href="Shop now">Shop now</a>
+      </div>
+
+      <div class="box-item">
+        <p>Electronics </p>
+        <div class="box-image crop">
+          <img class="bigImg" src="/images folder/Electronics.jpg" alt="">
+        </div>
+        <a href="Shop now">Shop now</a>
+      </div>
+
+      <div class="box-item">
+        <p>Fitness Needs </p>
+        <div class="box-image crop">
+          <img class="bigImg" src="/images folder/Fitness.jpg" alt="">
+        </div>
+        <a href="Shop now">Shop now</a>
+      </div>
+
+      <div class="box-item">
+        <p>Pets </p>
+        <div class="box-image crop">
+          <img class="bigImg" src="/images folder/pets.jpg" alt="">
+        </div>
+        <a href="Shop now">Shop now</a>
+      </div>
+
+      <div class="box-item">
+        <p>Laptop & Tablets</p>
+        <div class="box-image crop">
+          <img class="bigImg" src="/images folder/laptop & tablet.jpg" alt="">
+        </div>
+        <a href="Shop now">Shop now</a>
+      </div>
+    </div>
+
+    <div class="signInContainerOuter">
+      <div class="signInContainerInner">
+        <p id="personalisedRecomendation">See personalised recommendation</p>
+        <div class="signInButton lowerButton">
+          <p>Sign in</p>
+        </div>
+        <div class="signInContainerInnerParaAnchor">
+          <p>New Customer?</p>
+          <a href="Start here">Start here</a>
+        </div>
+      </div>
+    </div>
+
+
+  </main>
+
+
+  <footer>
+    <div class="footer-panelOne">
+      <p>Back to top</p>
+    </div>
+
+    <div class="footer-panelTwo">
+      <div class="footer-panelTwo-colmOne">
+        <pre class="footer-panel-colm-head">Get to Know Us</pre>
+        <p>Careers</p>
+        <p>Blog</p>
+        <p>About Amazon</p>
+        <p>Investor Relations</p>
+        <p>Amazon Devices</p>
+        <p>Amazon Science</p>
+      </div>
+
+      <div class="footer-panelTwo-colmTwo">
+        <pre class="footer-panel-colm-head">Make Money with Us</pre>
+        <p>Sell products on Amazon</p>
+        <p>Sell on Amazon Business</p>
+        <p>Sell apps on Amazon</p>
+        <p>Become an Affiliate</p>
+        <p>Advertise Your Products</p>
+        <p>Self-Publish with Us</p>
+        <p>Host an Amazon Hub</p>
+        <p>> See More Make Money
+          with us
+        </p>
+      </div>
+
+      <div class="footer-panelTwo-colmThree">
+        <pre class="footer-panel-colm-head">Amazon Payment Products</pre>
+        <p>Amazon Business Card</p>
+        <p>Shop with Points</p>
+        <p>Reload Your Balance</p>
+        <p>Amazon Currency Converter</p>
+      </div>
+
+      <div class="footer-panelTwo-colmFour">
+        <pre class="footer-panel-colm-head">Let Us Help You</pre>
+        <p>Amazom & COVID-
+          19</p>
+        <p>Your Account</p>
+        <p>Your Orders</p>
+        <p>Shipping Rates &
+          Policies</p>
+        <p>
+          Return &
+          Replacements
+        </p>
+        <p>Manage Your
+          Content and Devices</p>
+        <p>Amazon Assistant</p>
+        <p>Help</p>
+      </div>
+    </div>
+
+    <div class="footer-panelThree">
+      <div class="footer-amazonLogo">
+        <img class="footer-amazonLogoImg" src="/images folder /amazon_logo.png" alt="">
+      </div>
+
+      <div class="footer-language">
+        <i class="fa-solid fa-globe"></i>
+        <select class="footer-langSelect">
+          <option value="English">English</option>
+          <option value="Spanish">Spanish</option>
+          <option value="French">French</option>
+        </select>
+      </div>
+
+      <div class="footer-dollar">
+        <span>$</span>
+        <p>USD - U.S. Dollar</p>
+      </div>
+
+      <div class="footer-country">
+        <div class="footer-USflag">
+          <img class="footer-USflagImg" src="/images folder /usa flag.jpg">
+        </div>
+        <p>United States</p>
+      </div>
+    </div>
+
+
+    <div class="footer-panelFour">
+      <div class="footer-panelFour-text">
+        <span>Amazon Ignite</span>
+        <p>Sell Your</p>
+        <p>Original</p>
+        <p>Digital</p>
+        <p>Educational</p>
+        <p>Resources</p>
+      </div>
+
+      <div class="footer-panelFour-text">
+        <span>Amazon Ignite</span>
+        <p>Sell Your</p>
+        <p>Original</p>
+        <p>Digital</p>
+        <p>Educational</p>
+        <p>Resources</p>
+      </div>
+
+      <div class="footer-panelFour-text">
+        <span>Amazon Ignite</span>
+        <p>Sell Your</p>
+        <p>Original</p>
+        <p>Digital</p>
+        <p>Educational</p>
+        <p>Resources</p>
+      </div>
+
+      <div class="footer-panelFour-text">
+        <span>Amazon Ignite</span>
+        <p>Sell Your</p>
+        <p>Original</p>
+        <p>Digital</p>
+        <p>Educational</p>
+        <p>Resources</p>
+      </div>
+
+      <div class="footer-panelFour-text">
+        <span>Amazon Ignite</span>
+        <p>Sell Your</p>
+        <p>Original</p>
+        <p>Digital</p>
+        <p>Educational</p>
+        <p>Resources</p>
+      </div>
+
+      <div class="footer-panelFour-text">
+        <span>Amazon Ignite</span>
+        <p>Sell Your</p>
+        <p>Original</p>
+        <p>Digital</p>
+        <p>Educational</p>
+        <p>Resources</p>
+      </div>
+
+      <div class="footer-panelFour-text">
+        <span>Amazon Ignite</span>
+        <p>Sell Your</p>
+        <p>Original</p>
+        <p>Digital</p>
+        <p>Educational</p>
+        <p>Resources</p>
+      </div>
+
+      <div class="footer-panelFour-text">
+        <span>Amazon Ignite</span>
+        <p>Sell Your</p>
+        <p>Original</p>
+        <p>Digital</p>
+        <p>Educational</p>
+        <p>Resources</p>
+      </div>
+
+      <div class="footer-panelFour-text">
+        <span>Amazon Ignite</span>
+        <p>Sell Your</p>
+        <p>Original</p>
+        <p>Digital</p>
+        <p>Educational</p>
+        <p>Resources</p>
+      </div>
+
+      <div class="footer-panelFour-text">
+        <span>Amazon Ignite</span>
+        <p>Sell Your</p>
+        <p>Original</p>
+        <p>Digital</p>
+        <p>Educational</p>
+        <p>Resources</p>
+      </div>
+
+      <div class="footer-panelFour-text">
+        <span>Amazon Ignite</span>
+        <p>Sell Your</p>
+        <p>Original</p>
+        <p>Digital</p>
+        <p>Educational</p>
+        <p>Resources</p>
+      </div>
+
+      <div class="footer-panelFour-text">
+        <span>Amazon Ignite</span>
+        <p>Sell Your</p>
+        <p>Original</p>
+        <p>Digital</p>
+        <p>Educational</p>
+        <p>Resources</p>
+      </div>
+
+      <div class="footer-panelFour-text">
+        <span>Amazon Ignite</span>
+        <p>Sell Your</p>
+        <p>Original</p>
+        <p>Digital</p>
+        <p>Educational</p>
+        <p>Resources</p>
+      </div>
+
+      <div class="footer-panelFour-text">
+        <span>Amazon Ignite</span>
+        <p>Sell Your</p>
+        <p>Original</p>
+        <p>Digital</p>
+        <p>Educational</p>
+        <p>Resources</p>
+      </div>
+
+      <div class="footer-panelFour-text">
+        <span>Amazon Ignite</span>
+        <p>Sell Your</p>
+        <p>Original</p>
+        <p>Digital</p>
+        <p>Educational</p>
+        <p>Resources</p>
+      </div>
+
+      <div class="footer-panelFour-text">
+        <span>Amazon Ignite</span>
+        <p>Sell Your</p>
+        <p>Original</p>
+        <p>Digital</p>
+        <p>Educational</p>
+        <p>Resources</p>
+      </div>
+
+      <div class="footer-panelFour-text">
+        <span>Amazon Ignite</span>
+        <p>Sell Your</p>
+        <p>Original</p>
+        <p>Digital</p>
+        <p>Educational</p>
+        <p>Resources</p>
+      </div>
+
+      <div class="footer-panelFour-text">
+        <span>Amazon Ignite</span>
+        <p>Sell Your</p>
+        <p>Original</p>
+        <p>Digital</p>
+        <p>Educational</p>
+        <p>Resources</p>
+      </div>
+
+      <div class="footer-panelFour-text">
+        <span>Amazon Ignite</span>
+        <p>Sell Your</p>
+        <p>Original</p>
+        <p>Digital</p>
+        <p>Educational</p>
+        <p>Resources</p>
+      </div>
+
+      <div class="footer-panelFour-text">
+        <span>Amazon Ignite</span>
+        <p>Sell Your</p>
+        <p>Original</p>
+        <p>Digital</p>
+        <p>Educational</p>
+        <p>Resources</p>
+      </div>
+
+      <div class="footer-panelFour-text">
+        <span>Amazon Ignite</span>
+        <p>Sell Your</p>
+        <p>Original</p>
+        <p>Digital</p>
+        <p>Educational</p>
+        <p>Resources</p>
+      </div>
+
+      <div class="footer-panelFour-text">
+        <span>Amazon Ignite</span>
+        <p>Sell Your</p>
+        <p>Original</p>
+        <p>Digital</p>
+        <p>Educational</p>
+        <p>Resources</p>
+      </div>
+
+      <div class="footer-panelFour-text">
+        <span>Amazon Ignite</span>
+        <p>Sell Your</p>
+        <p>Original</p>
+        <p>Digital</p>
+        <p>Educational</p>
+        <p>Resources</p>
+      </div>
+
+      <div class="footer-panelFour-text">
+        <span>Amazon Ignite</span>
+        <p>Sell Your</p>
+        <p>Original</p>
+        <p>Digital</p>
+        <p>Educational</p>
+        <p>Resources</p>
+      </div>
+
+      <div class="footer-panelFour-text">
+        <span>Amazon Ignite</span>
+        <p>Sell Your</p>
+        <p>Original</p>
+        <p>Digital</p>
+        <p>Educational</p>
+        <p>Resources</p>
+      </div>
+
+      <div class="footer-panelFour-text">
+        <span>Amazon Ignite</span>
+        <p>Sell Your</p>
+        <p>Original</p>
+        <p>Digital</p>
+        <p>Educational</p>
+        <p>Resources</p>
+      </div>
+
+      <div class="footer-panelFour-text">
+        <span>Amazon Ignite</span>
+        <p>Sell Your</p>
+        <p>Original</p>
+        <p>Digital</p>
+        <p>Educational</p>
+        <p>Resources</p>
+      </div>
+
+      <div class="footer-panelFour-text">
+        <span>Amazon Ignite</span>
+        <p>Sell Your</p>
+        <p>Original</p>
+        <p>Digital</p>
+        <p>Educational</p>
+        <p>Resources</p>
+      </div>
+
+      <div class="footer-panelFour-text">
+        <!--   <span>Amazon Ignite</span>
+        <p>Sell Your</p>
+        <p>Original</p>
+        <p>Digital</p>
+        <p>Educational</p>
+        <p>Resources</p> -->
+      </div>
+
+      <div class="footer-panelFour-text">
+        <!--     <span>Amazon Ignite</span>
+        <p>Sell Your</p>
+        <p>Original</p>
+        <p>Digital</p>
+        <p>Educational</p>
+        <p>Resources</p> -->
+      </div>
+
+      <div class="footer-panelFour-text">
+        <span>Amazon Ignite</span>
+        <p>Sell Your</p>
+        <p>Original</p>
+        <p>Digital</p>
+        <p>Educational</p>
+        <p>Resources</p>
+      </div>
+
+      <div class="footer-panelFour-text">
+        <span>Amazon Ignite</span>
+        <p>Sell Your</p>
+        <p>Original</p>
+        <p>Digital</p>
+        <p>Educational</p>
+        <p>Resources</p>
+      </div>
+
+      <div class="footer-panelFour-text">
+        <span>Amazon Ignite</span>
+        <p>Sell Your</p>
+        <p>Original</p>
+        <p>Digital</p>
+        <p>Educational</p>
+        <p>Resources</p>
+      </div>
+
+      <div class="footer-panelFour-text">
+        <!--    <span>Amazon Ignite</span>
+        <p>Sell Your</p>
+        <p>Original</p>
+        <p>Digital</p>
+        <p>Educational</p>
+        <p>Resources</p>  -->
+      </div>
+
+      <div class="footer-panelFour-text">
+        <!--       <span>Amazon Ignite</span>
+        <p>Sell Your</p>
+        <p>Original</p>
+        <p>Digital</p>
+        <p>Educational</p>
+        <p>Resources</p> -->
+      </div>
+
+
+
+
+
+
+
+    </div>
+
+    <div class="footer-panelFive">
+      <div class="footer-panelFive-LineOne">
+        <p>Conditions of Use</p>
+        <p>Privacy Notice</p>
+        <p>Your Ads Privacy Choices</p>
+      </div>
+
+      <div class="footer-panelFive-LineTwo">
+        <p>© 1996-2023, Amazon.com, Inc. or its affiliates</p>
+      </div>
+    </div>
+
+  </footer>
+
+
+</body>
+
+</html>
